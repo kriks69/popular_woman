@@ -17,12 +17,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-
-
+from coolsite import settings
 from django.urls import path, include
 
-import settings
-from coolsite.women.views import pageNotFound
+from women.views import pageNotFound
 
 urlpatterns = [
     path('admin/', admin.site.urls),
